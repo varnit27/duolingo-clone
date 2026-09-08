@@ -8,8 +8,8 @@ const NAV_ITEMS = [
   { href: "/", label: "Learn", icon: "🏠" },
   { href: "/sounds", label: "Sounds", icon: "👄" },
   { href: "/profile", label: "Leaderboards", icon: "🏆" },
-  { href: "/coming-soon?f=Quests", label: "Quests", icon: "🎯" },
-  { href: "/coming-soon?f=Shop", label: "Shop", icon: "🛒" },
+  { href: "/quests", label: "Quests", icon: "🎯" },
+  { href: "/shop", label: "Shop", icon: "🛒" },
   { href: "/profile", label: "Profile", icon: "👤" },
   { href: "/coming-soon?f=More", label: "More", icon: "⋯" },
 ];
