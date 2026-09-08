@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --duo-green: #58CC02;
+  --duo-green-dark: #58A700;
+  --duo-blue: #1CB0F6;
+  --duo-blue-dark: #1899D6;
+  --duo-red: #FF4B4B;
+  --duo-red-dark: #EA2B2B;
+  --duo-gold: #FFC800;
+  --duo-purple: #CE82FF;
+  --duo-gray: #E5E5E5;
+  --duo-gray-dark: #AFAFAF;
+  --duo-text: #3C3C3C;
+}
+
+body {
+  @apply bg-white text-duo-text dark:bg-duo-nightBg dark:text-duo-nightText transition-colors duration-300;
+  font-family: "Nunito", ui-rounded, system-ui, sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Baloo 2", "Nunito", sans-serif;
+}
+
+.duo-button {
+  @apply rounded-2xl font-extrabold uppercase tracking-wide text-white px-6 py-3 border-b-[5px] transition-transform active:translate-y-[3px] active:border-b-0;
+  font-family: "Baloo 2", sans-serif;
+  letter-spacing: 0.5px;
+}
+.duo-button-green { background: var(--duo-green); border-color: var(--duo-green-dark); }
+.duo-button-blue { background: var(--duo-blue); border-color: var(--duo-blue-dark); }
+.duo-button-red { background: var(--duo-red); border-color: var(--duo-red-dark); }
+.duo-button-outline {
+  @apply rounded-2xl font-extrabold uppercase tracking-wide px-6 py-3 border-2 border-b-[5px] bg-white transition-transform active:translate-y-[3px] active:border-b-2;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.duo-card {
+  @apply rounded-2xl border-2 border-duo-gray dark:border-duo-nightBorder dark:bg-duo-nightPanel transition-colors duration-300;
+}
