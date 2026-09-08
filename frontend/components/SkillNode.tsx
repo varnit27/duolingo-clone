@@ -3,10 +3,6 @@
 import { useRouter } from "next/navigation";
 import type { Skill } from "@/lib/types";
 
-import { useRouter } from "next/navigation";
-import type { Skill } from "@/lib/types";
-import { shade } from "@/lib/colors";
-
 const ICONS: Record<string, string> = {
   wave: "👋",
   paw: "🐾",
@@ -88,13 +84,13 @@ export default function SkillNode({
 
         {/* Authentic Bouncy START Tooltip */}
         {isCurrent && !locked && !completed && (
-          <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white dark:bg-duo-nightPanel border-2 border-duo-gray dark:border-duo-nightBorder rounded-xl px-4 py-2 text-xs font-display font-bold shadow-md whitespace-nowrap text-duo-green animate-bounce z-20 transition-colors duration-300">
+          <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white dark:bg-duo-nightPanel border-2 border-duo-gray dark:border-duo-nightBorder rounded-xl px-4 py-2 text-xs font-bold shadow-md whitespace-nowrap text-duo-green animate-bounce z-20 transition-colors duration-300">
             START
             <div className="absolute left-1/2 -translate-x-1/2 -bottom-1.5 w-3 h-3 bg-white dark:bg-duo-nightPanel border-r-2 border-b-2 border-duo-gray dark:border-duo-nightBorder rotate-45 transition-colors duration-300" />
           </div>
         )}
       </div>
-      <p className="font-display font-bold text-xs mt-2 text-center max-w-[80px] text-duo-text dark:text-duo-nightText transition-colors duration-300">
+      <p className="font-bold text-xs mt-2 text-center max-w-[80px] text-duo-text dark:text-duo-nightText transition-colors duration-300">
         {skill.title}
       </p>
     </div>
